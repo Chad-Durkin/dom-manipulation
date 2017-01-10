@@ -1,32 +1,32 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <script src="js/jquery-1.10.2.js"></script>
+    <script src="js/jquery-3.1.1.js"></script>
     <script src="js/scripts.js"></script>
     <title>Talk to the web page</title>
   </head>
   <body>
     <div class="container">
-      <h1>Talk to the web page</h1>
-      <p>Click a button to say something to the web page. See what it says back!</p>
+      <h1>Make the dog bark, or the cat meow...</h1>
+      <p>Click the <strong>dog</strong> to make it bark or click the <strong>cat</strong> to make it meow!</p>
 
-      <button class="btn btn-primary" id="hello">Say "hello"</button>
-      <button class="btn btn-inverse" id="goodbye">Say "goodbye"</button>
-      <button class="btn btn-danger" id="stop">Say "stop copying me!"</button>
+      <button class="btn btn-primary" id="dog"><img src="https://www.petfinder.com/wp-content/uploads/2012/11/118439265-dog-barks-left-alone-632x475.jpg" alt="A barking dog" height="300px"/></button>
+      <button class="btn btn-danger" id="clear">CLEAR!</button>
+      <button class="btn btn-primary" id="cat"><img src="http://www.cat-behavior-explained.com/images/meowing-british-kitten-2.jpg" alt="A meowing cat" height="300px" /></button>
 
       <div class="row">
         <div class="col-md-6">
-          <h2>You said:</h2>
-          <ul class="unstyled">
+          <h2>The dog says:</h2>
+          <ul class="dogsays">
 
           </ul>
         </div>
 
         <div class="col-md-6">
-          <h2>The web page said back:</h2>
-          <ul class="unstyled">
+          <h2>The cat says:</h2>
+          <ul class="catsays">
 
           </ul>
         </div>
