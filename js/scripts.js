@@ -1,7 +1,7 @@
 $(document).ready(function() {
-  $("button#dog").click(function() {
+  $("#dog").click(function() {
     $("ul.dogsays").prepend("<li>Bark! Hey you!</li>");
-    $("ul.catsays").append("<li>Meow! What!</li>");
+    $("ul.catsays").prepend("<li>Meow! What!</li>");
   });
 
   $("button#cat").click(function() {
@@ -10,15 +10,18 @@ $(document).ready(function() {
   });
 
   $("button#favCat").click(function() {
-    $("ul.favorites").before("<li>I love cats!</li>");
+    $("ol.catsFav").prepend("<li class=myFav>cats</li>");
   });
 
   $("button#favDog").click(function() {
-    $("ul.favorites").after("<li>I love dogs!</li>");
+    $("ol.dogsFav").prepend("<li class=myFav>dogs</li>");
   });
 
   $("button#clear").click(function() {
     $("li").remove();
   });
 
+  $("button#clear").click(function() {
+    $("p").remove();
+  });
 });
